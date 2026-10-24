@@ -16,7 +16,7 @@
 <div class="wrap">
   <header class="top">
     <div class="brand"><div class="logo">⌘</div><div>SISTEM KOMPUTER <div class="smallmuted">MPI - INFORMATIKA</div></div></div>
-    <div class="row"><span class="tag">FASE E · KELAS X</span><button class="btn ghost small" onclick="showTeacherLogin()">Dashboard Guru ↗</button></div>
+    <div class="row"><span class="tag">FASE E · KELAS X</span><button class="btn ghost small" onclick="showTeacherLogin()">Guru ↗</button></div>
   </header>
 
   <main id="loginView" class="login-layout panel">
@@ -54,7 +54,7 @@
   </main>
 
   <main id="teacherLogin" class="login-layout panel hidden">
-    <span class="pill">AREA PENGELOLA</span><h2>Dashboard Guru</h2><p class="hint">Autentikasi dilakukan melalui Google Apps Script. Jangan menyimpan password admin di kode frontend publik.</p>
+    <span class="pill">AREA PENGELOLA</span><h2>Dashboard Guru</h2>
     <form id="teacherForm"><div class="field"><label>Password dashboard</label><input id="teacherPassword" type="password" required autocomplete="current-password" placeholder="Masukkan password guru"></div><button class="btn" type="submit">Masuk dashboard →</button><button type="button" class="btn ghost" onclick="backToStudent()">Kembali</button></form>
     <div id="teacherLoginMsg"></div>
   </main>
