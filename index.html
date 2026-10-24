@@ -21,16 +21,16 @@
 
   <main id="loginView" class="login-layout panel">
     <span class="pill">SEBELUM MULAI</span>
-    <h2>Masuk ke ruang belajar digital 🚀</h2>
-    <p class="hint">Isi identitas dengan benar. Data aktivitas dan jawaban akan dikirim ke Google Sheets jika alamat Web App Apps Script sudah dikonfigurasi.</p>
+   <!-- <h2>Masuk ke ruang belajar digital</h2> -->
+    <p class="hint">Isi identitas dengan benar. Data aktivitas dan jawaban akan dikirim dan disimpan di database.</p>
     <form id="studentForm">
-      <div class="field"><label for="studentName">Nama lengkap</label><input id="studentName" required maxlength="100" autocomplete="name" placeholder="Contoh: Nabila Putri"></div>
-      <div class="field"><label for="nis">NIS</label><input id="nis" required maxlength="30" placeholder="Masukkan NIS"></div>
+      <div class="field"><label for="studentName">Nama lengkap</label><input id="studentName" required maxlength="30" autocomplete="name" placeholder="Contoh: Nabila Putri"></div>
+      <div class="field"><label for="nis">NIS/No. Absen</label><input id="nis" required maxlength="5" placeholder="Masukkan NIS/No.Absen"></div>
       <div class="field"><label for="className">Kelas</label><select id="className" required><option value="">Pilih kelas</option><option>X3</option><option>X4</option></select></div>
       <div class="field"><label for="date">Tanggal pengerjaan</label><input id="date" type="date" required></div>
       <button class="btn" type="submit">Mulai Belajar →</button>
     </form>
-    <div class="notice">💡 Tips: kerjakan pre-test secara mandiri. Setelah belajar dan simulasi, selesaikan LKPD post-test lalu tulis refleksi yang jujur.</div>
+    <div class="notice">Tips: Kerjakan pre-test secara mandiri. Setelah belajar dan simulasi, selesaikan LKPD post-test lalu tulis refleksi yang jujur.</div>
   </main>
 
   <main id="studentView" class="hidden">
